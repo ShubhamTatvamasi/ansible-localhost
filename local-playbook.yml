@@ -24,4 +24,6 @@
 
   - name: Home directory
     debug: 
-      msg: "{{ lookup('env','HOME') }}"
+      msg: "{{ ansible_env.HOME }}"
+      # msg: "{{ lookup('env','HOME') }}"
+    # ansible_home: "{{ ansible_env.HOME }}"
